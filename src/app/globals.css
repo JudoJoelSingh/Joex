@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --bg-rich-black: #0A0A0B;
+  --surface-graphite: #111214;
+  --surface-card: #16181D;
+  --accent-violet: #7C3AED;
+  --accent-ice-blue: #38BDF8;
+  --text-primary: #F5F5F5;
+  --text-secondary: #9CA3AF;
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-rich-black);
+  color: var(--text-primary);
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins);
+}
+
+/* Custom Shimmering AI Glow keyframes */
+@keyframes aiShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ai-shimmer-btn {
+  background: linear-gradient(90deg, #7C3AED, #38BDF8, #8B5CF6, #7C3AED);
+  background-size: 300% 300%;
+  animation: aiShimmer 3s ease infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7C3AED;
+}
+
+/* Print Overrides */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  header, footer, nav, button, .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:block {
+    display: block !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:border-none {
+    border: none !important;
+  }
+
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+}
