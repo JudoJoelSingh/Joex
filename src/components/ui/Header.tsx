@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
               <Sparkles className="w-4 h-4 text-white" />
             </div>
             <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-zinc-100 to-zinc-400 bg-clip-text text-transparent font-heading">
-              JOEX <span className="text-[#38BDF8]">AI</span>
+              shinex <span className="text-[#38BDF8]">AI</span>
             </span>
           </Link>
 

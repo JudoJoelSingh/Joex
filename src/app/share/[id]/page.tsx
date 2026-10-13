@@ -54,7 +54,7 @@ export default function SharePage({ params }: { params: Promise<{ id: string }> 
               <Sparkles className="w-4 h-4 text-white" />
             </div>
             <span className="font-extrabold text-lg tracking-tight font-heading hidden sm:inline">
-              JOEX <span className="text-[#38BDF8]">AI</span>
+              shinex <span className="text-[#38BDF8]">AI</span>
             </span>
           </Link>
 

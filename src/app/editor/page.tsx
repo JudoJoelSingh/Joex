@@ -39,7 +39,7 @@ export default function EditorPage() {
   // Load saved resume from localStorage on client load
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('joex_resume_data');
+      const saved = localStorage.getItem('shinex_resume_data');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed && parsed.personalDetails) {
@@ -56,7 +56,7 @@ export default function EditorPage() {
     setIsSaved(false);
     const timer = setTimeout(async () => {
       try {
-        localStorage.setItem('joex_resume_data', JSON.stringify(resumeData));
+        localStorage.setItem('shinex_resume_data', JSON.stringify(resumeData));
         await fetch('/api/resumes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

@@ -22,7 +22,7 @@ export const ExportPdfButton: React.FC<ExportPdfButtonProps> = ({ data }) => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      const filename = `${(data.personalDetails.fullName || 'Resume').replace(/\s+/g, '_')}_JOEX_AI.pdf`;
+      const filename = `${(data.personalDetails.fullName || 'Resume').replace(/\s+/g, '_')}_shinex_AI.pdf`;
       link.download = filename;
       document.body.appendChild(link);
       link.click();

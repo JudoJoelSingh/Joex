@@ -31,7 +31,7 @@ export const OnboardingBanner: React.FC<OnboardingBannerProps> = ({ onSelectSect
             </div>
             <div>
               <h3 className="text-sm font-bold text-white font-heading flex items-center gap-2">
-                <span>Welcome to JOEX AI Studio</span>
+                <span>Welcome to shinex AI Studio</span>
                 <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full bg-[#7C3AED]/30 text-[#38BDF8] border border-[#7C3AED]/40">
                   Quickstart
                 </span>

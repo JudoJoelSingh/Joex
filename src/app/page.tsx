@@ -144,7 +144,7 @@ export default function Home() {
               <Sparkles className="w-5 h-5 text-white" />
             </motion.div>
             <span className="font-extrabold text-xl tracking-tight font-heading">
-              JOEX <span className="text-[#38BDF8]">AI</span>
+              shinex <span className="text-[#38BDF8]">AI</span>
             </span>
           </Link>
 
@@ -197,7 +197,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-[#9CA3AF] text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-12"
           >
-            JOEX AI combines real-time live editing, OpenAI-powered bullet rewrites, 3 ATS-ready
+            shinex AI combines real-time live editing, OpenAI-powered bullet rewrites, 3 ATS-ready
             templates, and one-click vector PDF export — built for ambitious professionals.
           </motion.p>
 
@@ -213,7 +213,7 @@ export default function Home() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#7C3AED] via-purple-600 to-[#38BDF8] hover:from-[#6d28d9] hover:to-sky-500 text-white font-bold text-base px-8 py-4 rounded-2xl shadow-2xl shadow-purple-900/40 transition-all duration-300 hover:scale-105 hover:shadow-purple-600/30"
             >
               <Sparkles className="w-5 h-5" />
-              <span>Open JOEX AI Studio — Free</span>
+              <span>Open shinex AI Studio — Free</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
@@ -341,7 +341,7 @@ export default function Home() {
             <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-[#7C3AED] to-[#38BDF8] flex items-center justify-center">
               <Sparkles className="w-3.5 h-3.5 text-white" />
             </div>
-            <span className="font-bold text-zinc-300">JOEX AI</span>
+            <span className="font-bold text-zinc-300">shinex AI</span>
             <span>© 2026 — All rights reserved.</span>
           </div>
           <div className="flex items-center gap-4">

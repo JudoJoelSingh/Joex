@@ -86,7 +86,7 @@ export const PdfDocument: React.FC<PdfDocumentProps> = ({ data }) => {
       : whiteStyles;
 
   return (
-    <Document title={`${personalDetails.fullName || 'Resume'} - JOEX AI`}>
+    <Document title={`${personalDetails.fullName || 'Resume'} - shinex AI`}>
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>
