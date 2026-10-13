@@ -22,7 +22,7 @@ export const ExportPdfButton: React.FC<ExportPdfButtonProps> = ({ data }) => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      const filename = `${(data.personalDetails.fullName || 'Resume').replace(/\s+/g, '_')}_shinex_AI.pdf`;
+      const filename = `${(data.personalDetails.fullName || 'Resume').replace(/\s+/g, '_')}_Shinex_AI.pdf`;
       link.download = filename;
       document.body.appendChild(link);
       link.click();
@@ -43,11 +43,10 @@ export const ExportPdfButton: React.FC<ExportPdfButtonProps> = ({ data }) => {
         whileTap={{ scale: 0.97 }}
         onClick={handleDownloadPdf}
         disabled={isGenerating}
-        className={`inline-flex items-center gap-2 font-semibold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg transition-all duration-200 cursor-pointer ${
-          isGenerating
+        className={`inline-flex items-center gap-2 font-semibold text-xs sm:text-sm px-4 py-2 rounded-xl shadow-lg transition-all duration-200 cursor-pointer ${isGenerating
             ? 'ai-shimmer-btn text-white shadow-purple-900/30 cursor-wait'
             : 'bg-gradient-to-r from-[#7C3AED] to-[#38BDF8] hover:from-purple-600 hover:to-sky-400 text-white shadow-purple-900/30'
-        }`}
+          }`}
       >
         {isGenerating ? (
           <>

@@ -14,14 +14,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'shinex AI — Premium AI Resume Generator & Professional Identity Platform',
+  title: 'Shinex AI — Premium AI Resume Generator & Professional Identity Platform',
   description:
     'Craft modern, executive resumes in minutes with OpenAI powered rewrites, live split-screen editor, 3 ATS templates, and instant vector PDF download.',
   keywords: [
     'Resume Builder',
     'AI Resume Generator',
     'OpenAI Resume Writer',
-    'shinex AI',
+    'Shinex AI',
     'ATS Resume Templates',
     'PDF Resume Export',
   ],

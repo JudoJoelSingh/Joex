@@ -39,7 +39,7 @@ export default function EditorPage() {
   // Load saved resume from localStorage on client load
   useEffect(() => {
     try {
-      const saved = localStorage.getItem('shinex_resume_data');
+      const saved = localStorage.getItem('Shinex_resume_data');
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed && parsed.personalDetails) {
@@ -56,7 +56,7 @@ export default function EditorPage() {
     setIsSaved(false);
     const timer = setTimeout(async () => {
       try {
-        localStorage.setItem('shinex_resume_data', JSON.stringify(resumeData));
+        localStorage.setItem('Shinex_resume_data', JSON.stringify(resumeData));
         await fetch('/api/resumes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -117,21 +117,19 @@ export default function EditorPage() {
       <div className="lg:hidden flex border-b border-zinc-800 bg-[#111214] px-4 py-2 print:hidden">
         <button
           onClick={() => setMobileTab('edit')}
-          className={`flex-1 flex items-center justify-center gap-2 py-2 text-xs font-semibold rounded-lg transition-colors ${
-            mobileTab === 'edit'
+          className={`flex-1 flex items-center justify-center gap-2 py-2 text-xs font-semibold rounded-lg transition-colors ${mobileTab === 'edit'
               ? 'bg-[#7C3AED] text-white shadow-md'
               : 'text-zinc-400 hover:text-zinc-200'
-          }`}
+            }`}
         >
           <Edit3 className="w-4 h-4" /> Studio Editor
         </button>
         <button
           onClick={() => setMobileTab('preview')}
-          className={`flex-1 flex items-center justify-center gap-2 py-2 text-xs font-semibold rounded-lg transition-colors ${
-            mobileTab === 'preview'
+          className={`flex-1 flex items-center justify-center gap-2 py-2 text-xs font-semibold rounded-lg transition-colors ${mobileTab === 'preview'
               ? 'bg-[#7C3AED] text-white shadow-md'
               : 'text-zinc-400 hover:text-zinc-200'
-          }`}
+            }`}
         >
           <Eye className="w-4 h-4" /> Live Preview
         </button>
@@ -141,9 +139,8 @@ export default function EditorPage() {
       <div className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 print:block print:p-0">
         {/* Left Column: Studio Form Editor */}
         <div
-          className={`lg:col-span-6 xl:col-span-5 flex flex-col bg-[#111214] border border-zinc-800/80 rounded-2xl overflow-hidden shadow-2xl ${
-            mobileTab === 'preview' ? 'hidden lg:flex' : 'flex'
-          } print:hidden`}
+          className={`lg:col-span-6 xl:col-span-5 flex flex-col bg-[#111214] border border-zinc-800/80 rounded-2xl overflow-hidden shadow-2xl ${mobileTab === 'preview' ? 'hidden lg:flex' : 'flex'
+            } print:hidden`}
         >
           {/* Resume Title Header Input & Quick Actions */}
           <div className="p-3.5 border-b border-zinc-800 bg-[#16181D]/80 flex items-center justify-between gap-2">
@@ -186,11 +183,10 @@ export default function EditorPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setActiveSection(sec.id)}
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
-                  activeSection === sec.id
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${activeSection === sec.id
                     ? 'bg-gradient-to-r from-[#7C3AED] to-purple-600 text-white shadow-lg shadow-purple-900/40'
                     : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
-                }`}
+                  }`}
               >
                 {sec.icon}
                 <span>{sec.label}</span>
@@ -272,9 +268,8 @@ export default function EditorPage() {
 
         {/* Right Column: Real-Time Live Preview Pane */}
         <div
-          className={`lg:col-span-6 xl:col-span-7 flex flex-col ${
-            mobileTab === 'edit' ? 'hidden lg:flex' : 'flex'
-          }`}
+          className={`lg:col-span-6 xl:col-span-7 flex flex-col ${mobileTab === 'edit' ? 'hidden lg:flex' : 'flex'
+            }`}
         >
           {/* ATS Health Scanner Card */}
           <AtsScoreCard resumeData={resumeData} />

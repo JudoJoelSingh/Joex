@@ -82,11 +82,11 @@ export const PdfDocument: React.FC<PdfDocumentProps> = ({ data }) => {
     templateId === 'elite-black'
       ? blackStyles
       : templateId === 'modern-glass'
-      ? glassStyles
-      : whiteStyles;
+        ? glassStyles
+        : whiteStyles;
 
   return (
-    <Document title={`${personalDetails.fullName || 'Resume'} - shinex AI`}>
+    <Document title={`${personalDetails.fullName || 'Resume'} - Shinex AI`}>
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>

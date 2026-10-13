@@ -54,7 +54,7 @@ export default function SharePage({ params }: { params: Promise<{ id: string }> 
               <Sparkles className="w-4 h-4 text-white" />
             </div>
             <span className="font-extrabold text-lg tracking-tight font-heading hidden sm:inline">
-              shinex <span className="text-[#38BDF8]">AI</span>
+              Shinex <span className="text-[#38BDF8]">AI</span>
             </span>
           </Link>
 
@@ -66,11 +66,10 @@ export default function SharePage({ params }: { params: Promise<{ id: string }> 
                   <button
                     key={tId}
                     onClick={() => handleTemplateChange(tId)}
-                    className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all capitalize ${
-                      resumeData.templateId === tId
+                    className={`px-2.5 py-1 text-xs font-semibold rounded-lg transition-all capitalize ${resumeData.templateId === tId
                         ? 'bg-zinc-800 text-white shadow-sm'
                         : 'text-zinc-400 hover:text-zinc-200'
-                    }`}
+                      }`}
                   >
                     {tId.replace('-', ' ')}
                   </button>
